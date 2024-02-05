@@ -1,0 +1,22 @@
+/* NotFound.module.css */
+.notFound {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ff4d4d;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  Link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

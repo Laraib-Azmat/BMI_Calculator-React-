@@ -1,0 +1,204 @@
+.section_2 {
+    background-color: #031d48;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .section_2 h1 {
+    color: #cdfffc;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    color: rgb(107, 222, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .bmi_value {
+    color: whitesmoke;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .figure {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .speedometer_container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 0.5rem solid #44f986;
+    background-color: white;
+    position: relative;
+  }
+  
+  .center_point {
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 3;
+  }
+  
+  .speedometer_scale {
+    width: 6px;
+    height: 220px;
+    background-color: black;
+    position: absolute;
+    left: 116px;
+    top: 7px;
+  }
+  
+  .scale-1 {
+    transform: rotate(-90deg);
+  }
+  
+  .scale-2 {
+    transform: rotate(-80deg);
+    background-color: red;
+  }
+  
+  .scale-3 {
+    transform: rotate(-70deg);
+    background-color: rgb(255, 115, 0);
+  }
+  
+  .scale-4 {
+    transform: rotate(-60deg);
+    background-color: rgb(255, 255, 0);
+  }
+  
+  .scale-5 {
+    transform: rotate(-50deg);
+    background-color: rgb(153, 255, 0);
+  }
+  
+  .scale-6 {
+    transform: rotate(-40deg);
+    background-color: rgb(0, 255, 8);
+  }
+  
+  .scale-7 {
+    transform: rotate(-30deg);
+    background-color: rgb(0, 255, 208);
+  }
+  
+  .scale-8 {
+    transform: rotate(-20deg);
+    background-color: rgb(0, 170, 255);
+  }
+  
+  .scale-9 {
+    transform: rotate(-10deg);
+    background-color: rgb(0, 0, 255);
+  }
+  
+  .scale-10 {
+    transform: rotate(0deg);
+    background-color: rgb(204, 0, 255);
+  }
+  
+  .scale-11 {
+    transform: rotate(10deg);
+    background-color: rgb(255, 0, 195);
+  }
+  
+  .scale-12 {
+    transform: rotate(20deg);
+    background-color: rgb(255, 0, 111);
+  }
+  
+  .scale-13 {
+    transform: rotate(30deg);
+    background-color: rgb(198, 70, 102);
+  }
+  
+  .scale-14 {
+    transform: rotate(40deg);
+    background-color: rgb(41, 212, 158);
+  }
+  
+  .scale-15 {
+    transform: rotate(50deg);
+    background-color: rgb(225, 174, 7);
+  }
+  
+  .scale-16 {
+    transform: rotate(60deg);
+    background-color: rgb(76, 94, 114);
+  }
+  
+  .scale-17 {
+    transform: rotate(70deg);
+    background-color: rgb(138, 56, 131);
+  }
+  
+  .scale-18 {
+    transform: rotate(80deg);
+    background-color: rgba(115, 255, 0, 0.863);
+  }
+  
+  .scale-19 {
+    transform: rotate(90deg);
+    background-color: rgb(76, 0, 255);
+  }
+  
+  .center_hide {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 19px;
+    z-index: 2;
+  }
+  
+  .bottom_hide {
+    width: 260px;
+    height: 115px;
+    background-color: #031d48;
+    position: absolute;
+    z-index: 4;
+    top: 130px;
+    left: -12px;
+    border-top: 2px solid black;
+  }
+  
+  .arrow_container {
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 48px;
+  }
+  
+  .arrow-wrapper {
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .arrow {
+    width: 90px;
+    height: 3px;
+    background-color: #870190;
+    position: absolute;
+    top: 68px;
+    left: -17px;
+  }
+  
+  

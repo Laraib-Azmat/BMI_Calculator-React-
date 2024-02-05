@@ -1,0 +1,554 @@
+.calculate_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #a3f8c2;
+  margin-bottom: 1rem;
+  min-height: 10vh;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 2rem 0rem;
+  color: #870190;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+#calculate_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #a3f8c2;
+  margin-bottom: 1rem;
+  min-height: 10vh;
+}
+
+.content a {
+  margin-right: 1rem;
+}
+
+form {
+  min-height: 70vh;
+  margin-top: -1rem;
+  padding-top: 1rem;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vh;
+  margin: 1rem;
+}
+
+.gender div {
+  height: 100%;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.gender_img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#male {
+  background-color: #a3f8c2;
+}
+
+#weight,
+#height {
+  border: 0;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 10px 10px 10 blue;
+  margin: 8px;
+  box-shadow: inset 2px 2px 5px #82889d, inset -5px -5px 10px rgb(236, 191, 191);
+  width: 80%;
+  transition: all 0.2s ease-in-out;
+}
+
+#weight:focus,
+#height:focus {
+  box-shadow: inset 1px 1px 2px #d19797, inset 1px 1px 2px rgb(233, 21, 21);
+}
+
+.weight,
+.height,
+.gender_text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #870190;
+  padding: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+button,
+.content a {
+  width: 45%;
+  background-color: #a3f8c2;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: #870190;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1.2rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.content a {
+  width: 20%;
+}
+
+button:hover,
+.content a:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* SECOND SECTION */
+
+#section_2 {
+  background-color: #031d48;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+#section_2 h1 {
+  color: #cdfffc;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: rgb(107, 222, 115);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bmi_value {
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.figure {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speedometer_container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 0.5rem solid #44f986;
+  background-color: white;
+  position: relative;
+}
+
+.center_point {
+  position: absolute;
+  left: 110px;
+  top: 110px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 3;
+}
+
+.speedometer_scale {
+  width: 6px;
+  height: 220px;
+  background-color: black;
+  position: absolute;
+  left: 116px;
+  top: 7px;
+}
+
+.scale-1 {
+  transform: rotate(-90deg);
+}
+
+.scale-2 {
+  transform: rotate(-80deg);
+  background-color: red;
+}
+
+.scale-3 {
+  transform: rotate(-70deg);
+  background-color: rgb(255, 115, 0);
+}
+
+.scale-4 {
+  transform: rotate(-60deg);
+  background-color: rgb(255, 255, 0);
+}
+
+.scale-5 {
+  transform: rotate(-50deg);
+  background-color: rgb(153, 255, 0);
+}
+
+.scale-6 {
+  transform: rotate(-40deg);
+  background-color: rgb(0, 255, 8);
+}
+
+.scale-7 {
+  transform: rotate(-30deg);
+  background-color: rgb(0, 255, 208);
+}
+
+.scale-8 {
+  transform: rotate(-20deg);
+  background-color: rgb(0, 170, 255);
+}
+
+.scale-9 {
+  transform: rotate(-10deg);
+  background-color: rgb(0, 0, 255);
+}
+
+.scale-10 {
+  transform: rotate(0deg);
+  background-color: rgb(204, 0, 255);
+}
+
+.scale-11 {
+  transform: rotate(10deg);
+  background-color: rgb(255, 0, 195);
+}
+
+.scale-12 {
+  transform: rotate(20deg);
+  background-color: rgb(255, 0, 111);
+}
+
+.scale-13 {
+  transform: rotate(30deg);
+  background-color: rgb(198, 70, 102);
+}
+
+.scale-14 {
+  transform: rotate(40deg);
+  background-color: rgb(41, 212, 158);
+}
+
+.scale-15 {
+  transform: rotate(50deg);
+  background-color: rgb(225, 174, 7);
+}
+
+.scale-16 {
+  transform: rotate(60deg);
+  background-color: rgb(76, 94, 114);
+}
+
+.scale-17 {
+  transform: rotate(70deg);
+  background-color: rgb(138, 56, 131);
+}
+
+.scale-18 {
+  transform: rotate(80deg);
+  background-color: rgba(115, 255, 0, 0.863);
+}
+
+.scale-19 {
+  transform: rotate(90deg);
+  background-color: rgb(76, 0, 255);
+}
+
+.center_hide {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  z-index: 2;
+}
+
+.bottom_hide {
+  width: 260px;
+  height: 115px;
+  background-color: #031d48;
+  position: absolute;
+  z-index: 4;
+  top: 130px;
+  left: -12px;
+  border-top: 2px solid black;
+}
+
+.arrow_container {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  left: 48px;
+}
+
+.arrow-wrapper {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  position: relative;
+  transition: all 2s ease;
+}
+
+.arrow {
+  width: 90px;
+  height: 3px;
+  background-color: #870190;
+  position: absolute;
+  top: 68px;
+  left: -17px;
+}
+
+.bmi_results {
+  margin: 2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bmi_gender_img {
+  flex: 1 1 50rem;
+  z-index: 4;
+}
+
+.bmi_gender_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.bmi_answer {
+  color: rgba(239, 226, 226, 0.829);
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: "Times New Roman", Times, serif;
+  text-align: start;
+  margin: 0.5rem;
+  z-index: 5;
+}
+
+.bmi_answer {
+  text-align: center;
+}
+
+@media screen and (min-width: 1281px) {
+  #section_2 {
+    padding: 0.5rem 0rem;
+  }
+  #section_2 h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #section_2 h4 {
+    z-index: 5;
+    margin-top: -5rem;
+    font-size: 1.5rem;
+  }
+  .bmi_results {
+    min-height: 40vh;
+    width: 70%;
+    margin: auto;
+  }
+  .bmi_gender_img {
+    height: 20rem;
+  }
+  .bmi_answer {
+    font-size: 1.5rem;
+  }
+
+  .figure {
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #section_2 {
+    margin-top: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 100vh;
+  }
+  #section_2 h1 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #section_2 {
+    padding: 0.5rem 0rem;
+  }
+  #section_2 h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  #section_2 h4 {
+    z-index: 5;
+    margin-top: -5rem;
+  }
+  .bmi_results {
+    min-height: 40vh;
+    width: 70%;
+    margin: auto;
+  }
+  .bmi_gender_img {
+    height: 18rem;
+  }
+  .bmi_answer {
+    font-size: 1.3rem;
+  }
+
+  .figure {
+    height: 20%;
+  }
+}
+
+@media screen and (width: 768px) {
+  #section_2 h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0rem;
+    padding: 2rem 0rem;
+  }
+
+  #section_2 h4 {
+    font-size: 2rem;
+  }
+  .bmi_answer {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  #section_2 img {
+    width: 13rem;
+  }
+}
+@media screen and (width: 540px) {
+  #section_2 h1 {
+    font-size: 1.8rem;
+    padding: 1rem 0rem;
+  }
+
+  #section_2 h4 {
+    font-size: 1.5rem;
+  }
+  .bmi_answer {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+  }
+  #section_2 img {
+    width: 9rem;
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .bmi_results {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .bmi_answer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .bmi_gender_img {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bmi_results {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .bmi_answer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .bmi_gender_img {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #section_2 h1 {
+    font-size: 1.5rem;
+  }
+  #section_2 img {
+    width: 9rem;
+    height: 14.5rem;
+    margin-left: 0rem;
+  }
+  .bmi_answer {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .bmi_results {
+    margin-top: 2rem;
+  }
+}
